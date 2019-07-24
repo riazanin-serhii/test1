@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic');
+.select{
+  width: 1200px;
+  height: 100px;
+  border-radius: 20px 20px;
+  border: 1px solid green;
+}
+.arrow{
+  -webkit-appearance:none;
+  width: 50px;
+  height: 50px;
+  padding-left: 6px; 
+  font-size: 25px;
+ background: url("../sprite/sprite.jpg");
+ background-repeat: no-repeat;
+ background-position: 25px 10px;
+ margin-left: 50px; 
+}
+label{
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+}
+textarea{
+  width:800px;
+  height: 80px;
+  max-width: 1100px;
+  max-height: 90px;
+  margin-left: 50px; 
+  border-radius: 20px 20px;
+}
+textarea:focus{
+  outline:none;
+  border-radius: 20px 20px;
+  border:1px solid red;
+}
+#slider{
+  display: none;
+}
+#slider+label{
+  padding-left: 150px;
+  margin-left: 20px;
+  position: relative;
+}
+#slider+label:before{
+  content:"";
+  height: 25px;
+  width: 100px;
+  background: red;
+  position: absolute;
+  border-radius: 10px 10px;
+  border:1px solid black;
+  -webkit-transform: translateX(-120px) translatey(20px);
+  transition: 1s ease;
+}
+#slider+label:after{
+  content:"";
+  height: 25px;
+  width: 25px;
+  background: grey;
+  position: absolute;
+  border-radius: 10px 10px;
+  border:1px solid black;
+  -webkit-transform: translateX(-185px) translatey(20px);
+  transition: 1s ease;
+}
+#slider:checked+label:before{
+  content:"";
+  height: 25px;
+  width: 100px;
+  background: green;
+  position: absolute;
+  border-radius: 10px 10px;
+  border:1px solid black;
+  -webkit-transform: translateX(-120px) translatey(20px);
+  transition: 1s ease;
+}
+#slider:checked+label:after{
+  content:"";
+  height: 25px;
+  width: 25px;
+  background: grey;
+  position: absolute;
+  border-radius: 10px 10px;
+  border:1px solid black;
+  -webkit-transform: translateX(-260px) translatey(20px);
+  transition: 1s ease;
+}
+  ::-webkit-input-placeholder{
+  color:brown;
+  padding-left: 20px;  
+  font-size: 20px;
+}
+  :focus::-webkit-input-placeholder { 
+  color: transparent;
+}
+.place{
+   margin-left: 50px;
+   margin-top: 20px;
+   border: 1px solid green;
+   height: 30px;  
+}
+
+.number::-webkit-inner-spin-button{
+   width: 10px;
+   height: 20px;
+   -webkit-appearance: none;
+   background:url("../sprite/sprite.jpg");
+   background-repeat: no-repeat;
+   background-position: -22px -2px;
+}
+.number{
+   margin-left: 50px;
+   margin-top: 20px;
+   border: 1px solid green;
+   height: 30px; 
+   color: red;
+   outline:none;
+}
+.number:focus{
+  border:1px solid red;
+}
